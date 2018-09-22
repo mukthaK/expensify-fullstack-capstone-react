@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Expensify</title>
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Fonts -->
+
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-87DrmpqHRiY8hPLIr7ByqhPIywuSsjuQAfMXAE0sMUpY3BM7nXjf+mLIUSvhDArs" crossorigin="anonymous">
+</head>
+
+<body class="bg-img">
+    <input type="hidden" id="loggedin-user" value="">
+    <!-- Navbar -->
+    <div id="reactHeader"></div>
+<!--
+    <nav role="navigation" class="topnav" id="navbar">
+        <div class="nav-left">
+            <a href="#home" id="">Expensify</a>
+        </div>
+        <div class="dropdown nav-right">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="#" id="friends-js">Friends</a>
+                <a href="#" id="bill-js">Bill</a>
+                <a href="#" id="youOwe-js">Bill settlement</a>
+                <a href="#" id="chgPswd-js">Change password</a>
+                <a href="#" id="logout-js">Log Out</a>
+            </div>
+        </div>
+    </nav>
+-->
+
+    <!-- Landing screen -->
+    <main role="main" id="home">
+        <section class="row">
+        <div id="reactAboutApp"></div>
+<!--
+            <div class="column-1">
+                <div class="about-app">
+                    <h1>Expensify</h1>
+                    <h3>Split expenses with friends</h3>
+                    <h5>The app maintains a running total</h5>
+                    <h5>so that you can pay each other at once!</h5>
+                </div>
+            </div>
+-->
+            <div class="container column-2">
+
+                <form role="form" class="login-form">
+                    <h1>Log In</h1>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter Email" name="email" value="" required>
+                    <label for="login-psw">Password</label>
+                    <input type="password" id="login-psw" placeholder="Enter Password" name="password" value="" required>
+                    <button role="button" type="submit" class="btn" id="login-js">Log In</button>
+                    <span>Dont have an account? </span>
+                    <button role="button" type="submit" class="signup-btn" id="signup-login-js"><span class="linkBtn">Sign Up!</span></button>
+                    <div class="demo-info">
+                        <p> Demo account</p>
+                        <p>email: test@email.com</p>
+                        <p>password: pass123</p>
+                    </div>
+                </form>
+                <form role="form" class="signup-form">
+                    <h1>Sign Up</h1>
+                    <!--
+<label for="signup-username">Username</label>
+<input type="text" id="signup-username" placeholder="Enter Username" value="" required>
+-->
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter Email" name="email" value="" required>
+                    <label for="signup-psw">Password</label>
+                    <input type="password" id="signup-psw" placeholder="Enter Password" value="" required>
+                    <button role="button" type="submit" class="btn" id="signup-js">Sign Up</button>
+                    <span>Already registered? </span>
+                    <button role="button" type="submit" class="signup-btn" id="login-signup-js"><span class="linkBtn">Log In!</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- User Dashboard -->
+    <!-- Friends -->
+    <main role="main" id="friends">
+        <section class="friends-wrapper">
+            <div class="friend-form-container">
+                <span class="message"></span>
+                <form role="form" class="add-friend-form">
+                    <!--
+<label for="friend-name">Name</label>
+<input type="text" placeholder="Enter Name" value="" id="friend-name" required>
+-->
+                    <label for="friend-email">Email</label>
+                    <input type="email" placeholder="Enter Email" name="email" value="" id="friend-email" required>
+                    <button role="button" type="submit" class="btn" id="add-friend-js">Add</button>
+                </form>
+            </div>
+            <!--            <input type="hidden" id="save-friend-name" value="">-->
+            <input type="hidden" id="save-friend-email" value="">
+            <div class="invite">
+                <p>Sorry! We couldn't find the friend you are looking to add.</p>
+                <p>Would you like to invite?</p>
+                <button role="button" type="submit" class="invite-btn" id="invite-js">Yes</button>
+                <button role="button" type="submit" class="invite-btn" id="invite-cancel-js">No</button>
+            </div>
+
+            <div class="friends-list">
+            </div>
+        </section>
+    </main>
+
+    <!-- Bill -->
+    <main role="main" id="bill">
+        <section class="bill-wrapper">
+            <form role="form" class="bill-desc bill-form">
+                <div>
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" placeholder="Rent" name="description" value="" required>
+                </div>
+                <div>
+                    <label for="amount">Amount: $</label>
+                    <input type="number" id="amount" placeholder="1500" name="amount" value="" required>
+                </div>
+                <div class="paid-style">
+                    <label for="whoPaid">Who paid:</label>
+                    <select id="friendPaid">
+                        <option value="">Option1</option>
+                    </select>
+                </div>
+                <div class="paid-style">
+                    <label for="name">For whom: </label>
+                    <div id="paidForWrapper">
+
+                    </div>
+                </div>
+                <div>
+                    <button role="button" type="submit" class="bill-btn" id="bill-submit">Add Bill</button>
+                </div>
+            </form>
+            <!--
+            <form role="form" class="bill-split bill-form">
+                <div class="split-type">
+                    <input type="radio" name="split" value="" required>
+                    <label for="split">Split equally</label>
+                </div>
+                <div class="split-type">
+                    <input type="radio" name="split" value="" required>
+                    <label for="split">You owe <span>John $</span></label>
+                </div>
+                <div class="split-type">
+                    <input type="radio" name="split" value="" required>
+                    <label for="split"><span>John</span> owes you <span>$</span></label>
+                </div>
+                <div class="split-type">
+                    <button role="button" type="submit" class="bill-btn" id="bill-split-next">Next</button>
+                </div>
+            </form>
+-->
+        </section>
+    </main>
+
+    <!-- You Owe  -->
+    <main role="main" id="youOwe">
+<div id="reactYouOwe"></div>
+<!--
+        <section class="youOwe-wrapper">
+            <p class="header-text">Showing total bill values that needs to be settled up!</p>
+            <div id="youOweBills">
+            </div>
+        </section>
+-->
+    </main>
+
+    <!-- You are owed -->
+    <!--
+    <main role="main" id="youAreOwed">
+        <section class="youAreOwed-wrapper">
+            <p class="header-text">Showing only people that owe you</p>
+            <div id="owedBills">
+            </div>
+        </section>
+    </main>
+-->
+
+    <!-- Activity -->
+    <!--
+    <main role="main" id="activity">
+        <section class="activity-wrapper">
+            <p class="activity-title">Recent Activity</p>
+            <div class="note">
+                <p>You added "Rent".</p>
+                <p>You get back $500.00</p>
+            </div>
+            <div class="note">
+                <p>You added "Dinner".</p>
+                <p>You owe $30.00</p>
+            </div>
+            <div class="note">
+                <p>You recorded a payment.</p>
+                <p>You paid $50.00</p>
+            </div>
+        </section>
+    </main>
+-->
+
+    <!-- change pswd -->
+    <main role="main" id="chgPswd">
+        <div class="chgPswd-wrapper">
+            <form role="form" class="chgPswd-form">
+                <h1>Change Password</h1>
+                <label for="old-psw">Old Password</label>
+                <input type="password" placeholder="Enter old Password" name="password" id="old-psw" value="" required>
+                <label for="new-psw">New Password</label>
+                <input type="password" id="new-psw" placeholder="Enter New Password" name="password" value="" required>
+                <button role="button" id="chg-pswd-js" type="submit" class="btn">Save</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer for the page -->
+
+    <div id="reactFooter"></div>
+<!--
+        <footer role="contentinfo" class="footer-container" id="footer">
+        <p>&copy; 2018 Muktha Krishnaswamy</p>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/muktha-krishnaswamy/" target="_blank" aria-label="linkedin profile link"><i class="fab fa-linkedin"></i></a>&nbsp;
+            <a href="mailto:muktha.1689@gmail.com" aria-label="email link"><i class="fas fa-envelope"></i></a>&nbsp;
+            <a href="https://github.com/mukthaK/expensify-fullstack-capstone" target="_blank" aria-label="github repo link"><i class="fab fa-github"></i></a>
+        </div>
+        </footer>
+-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/client.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
