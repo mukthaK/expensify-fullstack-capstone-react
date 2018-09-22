@@ -27,7 +27,8 @@ This app is designed for individual users who would like to cultivate new habit 
 ![Edit/View habit](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/editHabit.png "Edit/View habit")
 
 ## Working Prototype
-You can access a working prototype of the app here: https://expensify-capstone.herokuapp.com/
+You can access a working prototype of the app with Node here: https://expensify-capstone.herokuapp.com/
+You can access a working prototype of the app with React here: https://mukthak.github.io/expensify-fullstack-capstone-react/build
 
 ## Functionality ???
 The app's functionality includes:
