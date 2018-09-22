@@ -555,7 +555,19 @@ width: 80px;
 
 .footer-links {
     float: right;
+/*
+    display: inline-block;
+     height: 20px;
+    width: auto;
+*/
 }
+/*
+.footer-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+*/
 
 .footer-container i {
     color: white;
