@@ -11,8 +11,8 @@ An application to track the expenses.
 ![Adding habit](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/addHabit.png "Adding Habit")
 
 
-## User Cases ???
-This app is designed for individual users who would like to cultivate new habit and track their habits.
+## User Cases
+This app is designed for individual users who would like to track their spending. Expensify helps in splitting cost of a bill. The app maintains a running total so that you can pay each other at once!
 
 ### UI Flow ???
 ![UI Flow handwritten draft](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/uiflow.png)
@@ -30,11 +30,11 @@ This app is designed for individual users who would like to cultivate new habit 
 You can access a working prototype of the app with Node here: https://expensify-capstone.herokuapp.com/
 You can access a working prototype of the app with React here: https://mukthak.github.io/expensify-fullstack-capstone-react/build
 
-## Functionality ???
+## Functionality
 The app's functionality includes:
 * Every User has the ability to create an account that stores information unique to them
-* User can Add Entries, Update Entries, and Delete Entries
-* User can see how many times a bhabit has been done
+* User can add bill and add friends
+* User can see a summery of who has to pay whom
 
 ## Technology
 * Front-End: HTML5 | CSS3 | JavaScript ES6 | jQuery | React
@@ -43,12 +43,11 @@ The app's functionality includes:
 ## Responsive
 App is strongly built to be usuable on mobile devices, as well as responsive across mobile, tablet, laptop, and desktop screen resolutions.
 
-## Development Roadmap ???
+## Development Roadmap
 This is v1.0 of the app, but future enhancements are expected to include:
-* To enable users to add/track habits over a period of time
-* Enable notification to user prior a habit to be done
-* Enable users to customize their habit page by adding images, etc
-* Make a twitter post once a habit is checked-in
+* To enable users to update/delete a bill
+* Enable reminder notification to user when they have to pay the bill
+* Show the activity log of when a bill is added, when amount is settled, etc
 
 #  The typical command lines for capstone projects
 
