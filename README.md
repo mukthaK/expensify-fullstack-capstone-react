@@ -1,30 +1,27 @@
 # Expensify
 An application to track the expenses.
 
-## Screenshots ???
-![Landing page](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/homePage.png "Landing page")
-![Landing page additional](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/homePage1.png "Landing page")
-![Sign Up screen](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/signup.png "Sign Up screen")
-![Log In screen](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/login.png "Log In screen")
-![User dashboard](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/dashboard.png "User dashboard")
-![User Dashboard](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/dashboard1.png "User Dashboard")
-![Adding habit](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/website-images/addHabit.png "Adding Habit")
-
+## Screenshots
+![Landing page](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/homescreen.png "Landing page")
+![Landing page additional](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/homescreen-signup.png "Landing page")
+![Add Friend screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/friends.png "Add friend screen")
+![Add Bill screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/bill.png "Add bill screen")
+![Bill settlement screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/billsettlement.png "Bill settlement screen")
+![Change password screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/changepswd.png "Change password screen")
 
 ## User Cases
 This app is designed for individual users who would like to track their spending. Expensify helps in splitting cost of a bill. The app maintains a running total so that you can pay each other at once!
 
-### UI Flow ???
-![UI Flow handwritten draft](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/uiflow.png)
+### UI Flow
+![UI Flow handwritten draft](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/screenshots/userflow.jpg)
 
-### Wireframe ???
-![Landing Screen](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/landingpage.png "Landing screen") \
-![Sign Up screen](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/signupPage.png "Sign Up screen")
-![Log In screen](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/loginPage.png "Log In screen")
-![New user dashboard](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/newUserDashboard.png "New user dashboard")
-![User Dashboard](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/userDashboard.png "User Dashboard")
-![Adding habit](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/addNewHabit.png "Adding Habit")
-![Edit/View habit](https://github.com/mukthaK/habit-tracking-full-stack-capstone/blob/master/github-images/editHabit.png "Edit/View habit")
+### Wireframe
+![Landing page](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/landingPage.jpg "Landing screen") \
+![Add Friend screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/friendPage.jpg "Add Friend screen")
+![Add Bill screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/billPage.jpg "Add Bill screen")
+![Bill settlement screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/youAreOwedPage.jpg "Bill settlement screen")
+![Bill settlement screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/youOwePage.jpg "Bill settlement screen")
+![Bill view screen](https://github.com/mukthaK/expensify-fullstack-capstone-react/blob/master/github-images/billView.jpg "Bill settlement screen")
 
 ## Working Prototype
 You can access a working prototype of the app with Node here: https://expensify-capstone.herokuapp.com/
